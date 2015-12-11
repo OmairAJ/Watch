@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* Main CSS */
+
+body {
+  background: #e5eaee;
+  color: #3c3f39;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font: 300 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#time {
+  font: 100 2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#holder {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  /*background-color: #CCC;*/
+}

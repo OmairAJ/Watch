@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-12
+        .row
+          .col-xs-12.col-sm-12.col-md-8.col-lg-8.pull-right
+            #holder
+          #time.col-xs-12.col-sm-12.col-md-4.col-lg-4
+            <h1>The Watch</h1>
+            hr
+            h2
+              <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span> <span id="meridium"></span>
+            p.lead
+              Time
+            h2
+              <span id="day"></span>, <span id="month"></span> <span id="date"></span> <span id="year"></span>
+            p.lead
+              Date
+            hr
+            h3
+              <span id="sunRiseHr"></span>:<span id="sunRiseMin"></span> <span id="sunRiseMeridium"></span>
+            <p class="lead">Sunrise</p>
+            h3
+              <span id="sunSetHr"></span>:<span id="sunSetMin"></span> <span id="sunSetMeridium"></span>
+            <p class="lead">Sunset</p>
+            hr
+            h3
+              <span id="locLon"></span> <small>Lon</small>
+              br
+              <span id="locLat"></span> <small>Lat</small>
+            <p class="lead">Location <small><a id="map" href="" target="_blank">on map</a></small></p>
+            hr
+            <small id="sesNo"></small>
+            

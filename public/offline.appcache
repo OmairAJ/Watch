@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# 28 November 2014 06:00
+# explicitly cached entries
+/stylesheets/main.css
+/stylesheets/bootstrap.min.css
+/stylesheets/theme.min.css
+/stylesheets/font-awesome.min.css
+/javascripts/main.js
+/javascripts/modernizr.min.js
+/javascripts/html5shiv-printshiv.min.js
+/javascripts/respond.min.js
+/javascripts/ie10viewport-bugworkaround.js
+/javascripts/jquery.min.js
+/javascripts/bootstrap.min.js
+/javascripts/raphael.min.js
+/javascripts/retina.min.js
+/javascripts/svgfix.js
+/favicon.ico
+
+# resources that require connectivity to function
+NETWORK:
+*
+
+FALLBACK:
+/ /offline.html

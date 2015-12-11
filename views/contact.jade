@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  .container
+    .row
+      br
+      .col-md-12
+        <h1>Contact Us</h1>
+        hr
+        .well.well-lg
+          form#formContact(action="/contact" method="post" enctype="multipart/form-data" data-toggle="validator" role="form")
+            .row
+              .col-md-6
+                .form-group
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" data-error="O nameless person! Giveth thy name..." required />
+                  .help-block.with-errors
+                .form-group
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter personal email" data-error="Blessed is (s)he that expects nothing." required />
+                  .help-block.with-errors
+                .form-group
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Enter a subject" data-error="A clever subject is a good way to get noticed" required />
+                  .help-block.with-errors
+                if(typeof msg !== 'undefined')
+                  if(!!err)
+                    .help-block.text-danger #{msg}
+                  else
+                    .help-block.text-success #{msg}
+              .col-md-6
+                .form-group
+                  <label for="name"> Message</label>
+                  <textarea name="message" id="message" class="form-control" rows="9" cols="25" placeholder="Your Message" data-error="Well... You have to tell us something..?." required></textarea>
+                  .help-block.with-errors
+              .col-md-12
+                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
