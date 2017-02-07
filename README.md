@@ -9,6 +9,4 @@ A mobile responsive Scalable Vector Graphics (SVG) based watch which shows curre
 <li>Served using Node.js with Express framework</li>
 <li>Running on an Amazon EC2 Ubuntu instance</li>
 </ul>
-<strong>Demo at</strong><br />
-http://52.16.92.76/<br />
 <br />
